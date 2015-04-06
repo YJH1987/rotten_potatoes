@@ -7,7 +7,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    #byebug
+    #debugger
     need_redirect = false
     @all_ratings = Movie.get_all_ratings
     ratings = params[:ratings] || session[:ratings] || {}
